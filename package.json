@@ -3,14 +3,20 @@
   "version": "1.0.0",
   "description": "The purpose of this project is to familiarize its author with socket.io - specifically, the integration of socket.io with a react application.",
   "main": "server.js",
-  "dependencies": {},
+  "dependencies": {
+    "express": "^4.17.1"
+  },
   "devDependencies": {
+    "concurrently": "^4.1.1",
     "eslint": "^6.1.0",
     "eslint-plugin-react": "^7.14.3"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js"
+    "start": "if-env NODE_ENV=production && npm run start:prod || npm run start:dev",
+    "start:prod": "node server.js",
+    "start:dev": "concurrently \"nodemon --ignore 'client/*'\" \"npm run client\"",
+    "client": "cd client && npm run start"
   },
   "repository": {
     "type": "git",
