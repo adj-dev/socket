@@ -1,0 +1,1 @@
+The purpose of this project is to familiarize its author with socket.io - specifically, the integration of socket.io with a react application.
