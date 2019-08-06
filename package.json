@@ -1,0 +1,25 @@
+{
+  "name": "socket",
+  "version": "1.0.0",
+  "description": "The purpose of this project is to familiarize its author with socket.io - specifically, the integration of socket.io with a react application.",
+  "main": "server.js",
+  "dependencies": {},
+  "devDependencies": {
+    "eslint": "^6.1.0",
+    "eslint-plugin-react": "^7.14.3"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/adj-dev/socket.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/adj-dev/socket/issues"
+  },
+  "homepage": "https://github.com/adj-dev/socket#readme"
+}
